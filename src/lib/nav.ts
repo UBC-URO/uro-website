@@ -25,18 +25,6 @@ export const NAV = {
                     src: "https://assets.aceternity.com/demos/tailwindmasterkit.webp",
                     description: "Production ready Tailwind CSS components.",
                 },
-                {
-                    title: "RIF",
-                    href: "https://gomoonbeam.com",
-                    src: "https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png",
-                    description: "Go from idea to blog in minutes.",
-                },
-                {
-                    title: "Research Coaches",
-                    href: "https://userogue.com",
-                    src: "https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png",
-                    description: "Respond to government RFPs 10x faster using AI.",
-                },
             ],
         },
         {

@@ -1,13 +1,10 @@
-import HeroSection from "@/components/HeroSection";
-import WhoWeAreSection from "@/components/WhoWeAreSection";
-import MissionSection from "@/components/MissionSection";
+import Hero from "@/components/home/hero";
+import CarouselComponent from "@/components/home/carousel";
 
 export default function Home() {
     return (
         <>
-            {/* <HeroSection />
-            <WhoWeAreSection />
-            <MissionSection /> */}
+            <Hero/>
         </>
     );
 }
