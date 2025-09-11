@@ -19,7 +19,9 @@ export default function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <div className="inline-flex items-center px-6 py-3 rounded-full bg-teal-500 mb-8 p-8 hover:shadow-lg ">
-                    <span className="p-3 text-3xl font-bold text-white">Upcoming Events</span>
+                    <a href="https://www.instagram.com/uro_ubc/?hl=en" target="_blank">
+                        <span className="p-3 text-3xl font-bold text-white">Upcoming Events</span>
+                    </a>
                 </div>
             </div>
           </div>
