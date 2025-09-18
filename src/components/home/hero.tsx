@@ -100,17 +100,6 @@ export default function Hero() {
               <Play className="h-6 w-6 text-primary" />
               <span className="text-lg font-bold text-foreground">URO</span>
             </div>
-            <div className="flex items-center space-x-6">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                Privacy
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                Terms
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                Support
-              </a>
-            </div>
           </div>
           <div className="mt-8 pt-8 border-t border-border text-center">
             <p className="text-muted-foreground">© 2025 URO. All rights reserved.</p>

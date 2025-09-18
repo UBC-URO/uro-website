@@ -20,8 +20,8 @@ export default function TeamPage() {
                             </a>
                         </div>
                         <div className="flex justify-center px-6 py-3 rounded-full bg-teal-500 p-8 hover:shadow-lg">
-                            <a href="https://www.instagram.com/uro_ubc/?hl=en">
-                            <span className="p-3 text-xl font-semibold text-white">Instagram</span>
+                            <a href="mailto:EMAILADDRESS@gmail.com">
+                            <span className="p-3 text-xl font-semibold text-white">Email</span>
                             </a>
                         </div>
                     </div>  
