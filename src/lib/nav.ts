@@ -15,25 +15,22 @@ export const NAV = {
             products: [
                 {
                     title: "REX",
-                    href: "https://algochurn.com",
+                    href: "/rex",
                     src: "https://assets.aceternity.com/demos/algochurn.webp",
                     description: "Prepare for tech interviews like never before.",
                 },
                 {
                     title: "LSRN",
-                    href: "https://tailwindmasterkit.com",
+                    href: "/lsrn",
                     src: "https://assets.aceternity.com/demos/tailwindmasterkit.webp",
                     description: "Production ready Tailwind CSS components.",
                 },
             ],
         },
         {
-            kind: "menu",
+            kind: "link",
             label: "CJUR",
-            links: [
-                { label: "Overview", href: "/hobby" },
-                { label: "Issues", href: "/individual" },
-            ],
+            href: "https://cjur.ca/",
         },
         { kind: "link", label: "Contact", href: "/contact" },
     ],
