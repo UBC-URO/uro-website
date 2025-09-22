@@ -6,7 +6,7 @@ export const NAV = {
             label: "About",
             links: [
                 { label: "Team", href: "/team" },
-                { label: "Membership", href: "/membership" },
+                // { label: "Membership", href: "/membership" },
             ],
         },
         {
