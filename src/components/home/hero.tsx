@@ -1,107 +1,72 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Users, Megaphone, Cpu, Play } from "lucide-react";
-import CarouselComponent from "./carousel";
+import Image from "next/image";
+import Link from "next/link";
+import { Users, Megaphone, Calendar, ArrowRight, Sparkles } from "lucide-react";
 
-export default function Hero() {
+function StatPill({ value, label, icon }: { value: string; label: string; icon: React.ReactNode }) {
     return (
-        <div className="min-h-screen bg-background">
-            {/* Hero Section */}
-            <section className="bg-muted py-20 mb-20">
-                <div className="container mx-auto px-4 text-center">
-                    <div className="max-w-4xl mx-auto">
-                        <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 text-balance">UBC's Undergraduate Research Opportunities Club</h1>
-                        <p className="text-xl text-muted-foreground mb-8 text-pretty max-w-2xl mx-auto">
-                            Find out how you can get involved with research, events, and opportunities to connect with peers and professionals.
-                        </p>
-                        <div className="flex justify-center">
-                            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-teal-600 hover:bg-teal-700 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2">
-                                Upcoming Events
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Three-Column Feature Area */}
-            <section className="py-20">
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Stats</h2>
-                        <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Whether you're a student or a professor, our club provides everything you need to support your research.</p>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-8">
-                        {/* Students */}
-                        <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-                            <CardContent className="space-y-4">
-                                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-                                    <Megaphone className="h-8 w-8 text-primary" />
-                                </div>
-                                <h3 className="text-5xl font-bold text-foreground">50+</h3>
-                                <p className="text-2xl text-muted-foreground">Events Hosted</p>
-                            </CardContent>
-                        </Card>
-
-                        {/* Advertisers */}
-                        <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-                            <CardContent className="space-y-4">
-                                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-                                    <Users className="h-8 w-8 text-primary" />
-                                </div>
-                                <h3 className="text-5xl font-bold text-foreground">5000+</h3>
-                                <p className="text-2xl text-muted-foreground">Student Attendees</p>
-                            </CardContent>
-                        </Card>
-
-                        {/* Technology */}
-                        <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-                            <CardContent className="space-y-4">
-                                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-                                    <Cpu className="h-8 w-8 text-primary" />
-                                </div>
-                                <h3 className="text-5xl font-bold text-foreground">25+</h3>
-                                <p className="text-2xl text-muted-foreground">Student Publishings</p>
-                            </CardContent>
-                        </Card>
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-20">
-                <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto">
-                        <div className="text-center mb-16">
-                            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Event Photos</h2>
-                        </div>
-                        <CarouselComponent />
-                    </div>
-                </div>
-            </section>
-
-            {/* Footer */}
-            <footer className="bg-card border-t border-border py-12">
-                <div className="container mx-auto px-4">
-                    <div className="flex flex-col md:flex-row items-center justify-between">
-                        <div className="flex items-center space-x-2 mb-4 md:mb-0">
-                            <span className="text-lg font-bold text-foreground">URO</span>
-                        </div>
-                        <div className="flex items-center space-x-6">
-                            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                                Privacy
-                            </a>
-                            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                                Terms
-                            </a>
-                            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                                Support
-                            </a>
-                        </div>
-                    </div>
-                    <div className="mt-8 pt-8 border-t border-border text-center">
-                        <p className="text-muted-foreground">© 2025 URO. All rights reserved.</p>
-                    </div>
-                </div>
-            </footer>
+        <div className="flex items-center gap-3 rounded-xl bg-white border px-4 py-3 shadow-sm">
+            <div className="inline-flex items-center justify-center rounded-lg border px-2.5 py-2 text-slate-700">{icon}</div>
+            <div>
+                <div className="text-lg font-semibold text-slate-900 leading-none">{value}</div>
+                <div className="text-xs text-slate-600">{label}</div>
+            </div>
         </div>
     );
 }
+
+export const Hero = () => {
+    return (
+        <>
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div className="space-y-8">
+                    {/* <div className="inline-flex items-center gap-2 rounded-full bg-white/70 backdrop-blur px-4 py-2 border shadow-sm">
+                        <Sparkles className="h-4 w-4 text-teal-600" />
+                        <span className="text-sm font-medium text-slate-700">Discover. Build. Publish.</span>
+                    </div> */}
+
+                    <h1 className="text-4xl md:text-6xl font-bold text-slate-900 leading-tight text-balance">UBC’s Undergraduate Research Opportunities Club</h1>
+
+                    <p className="text-lg md:text-xl text-slate-700 leading-relaxed max-w-2xl">
+                        Join a community where ideas turn into research, projects become presentations, and students become scholars. Explore programs, events, mentorship, and publishing
+                        opportunities.
+                    </p>
+
+                    <div className="flex flex-col sm:flex-row gap-4">
+                        <Link
+                            href="/events"
+                            className="inline-flex items-center justify-center px-6 py-3 text-base md:text-lg font-semibold text-white bg-teal-600 hover:bg-teal-700 rounded-xl shadow-lg hover:shadow-xl transition-all"
+                            aria-label="See upcoming events"
+                        >
+                            <Calendar className="mr-2 h-5 w-5" />
+                            Upcoming Events
+                        </Link>
+
+                        <Link
+                            href="/programs/rex"
+                            className="inline-flex items-center justify-center px-6 py-3 text-base md:text-lg font-semibold rounded-xl border border-teal-600 text-teal-700 hover:bg-teal-50 transition-all"
+                            aria-label="Learn about REX program"
+                        >
+                            Learn about REX
+                            <ArrowRight className="ml-2 h-5 w-5" />
+                        </Link>
+                    </div>
+                </div>
+
+                {/* image frame */}
+                <div className="relative">
+                    <div className="aspect-[5/4] rounded-3xl shadow-2xl overflow-hidden relative">
+                        <Image
+                            src="/rex1.jpg" // swap to your real hero photo in /public
+                            alt="URO community at a research event"
+                            fill
+                            className="object-cover"
+                            priority
+                        />
+                    </div>
+                    <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-r from-teal-400 to-green-400 rounded-4xl opacity-50" />
+                    <div className="absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-r from-teal-400 to-green-400 rounded-2xl opacity-50" />
+                </div>
+            </div>
+        </>
+    );
+};

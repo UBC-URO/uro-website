@@ -18,7 +18,7 @@ export const MobileNavbar = () => {
                 </SheetTrigger>
 
                 {/* Sheet Panel */}
-                <SheetContent side="bottom" className="h-[60%] rounded-t-2xl p-6 flex flex-col items-center w-full">
+                <SheetContent side="bottom" className="h-[60%] rounded-t-2xl p-6 flex flex-col items-center w-full bg-white">
                     <div className="w-full">
                         {/* Accordion sections */}
 

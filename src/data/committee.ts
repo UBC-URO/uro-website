@@ -91,31 +91,37 @@ export const COMMITTEES: Committee[] = [
     {
         name: "Social Events Committee (SEC)",
         description: "Plans community mixers, kickoff, and showcase nights; handles venues, vendors, and swag.",
-        members: [MEMBERS[7], MEMBERS[5], MEMBERS[4], MEMBERS[6]], // Daniel, Leo, Mina, Priya
+        leaders: [MEMBERS[7]], // Daniel (Events Lead)
+        members: [MEMBERS[5], MEMBERS[4], MEMBERS[6]], // Leo, Mina, Priya
     },
     {
         name: "Research Experience (REX)",
         description: "Pairs students with mentors, runs research-skills workshops, and coordinates project showcases.",
-        members: [MEMBERS[2], MEMBERS[3], MEMBERS[9], MEMBERS[10]], // Sofia, Arjun, Marco, Alice
+        leaders: [MEMBERS[2]], // Sofia (VP Programs)
+        members: [MEMBERS[3], MEMBERS[9], MEMBERS[10]], // Arjun, Marco, Alice
     },
     {
         name: "Marketing & Brand Strategy (MBS)",
         description: "Content, social media, photography, and brand guidelines; collaborates on web updates.",
-        members: [MEMBERS[6], MEMBERS[4], MEMBERS[1]], // Priya, Mina, Ethan
+        leaders: [MEMBERS[6]], // Priya (Marketing Lead)
+        members: [MEMBERS[4], MEMBERS[1]], // Mina, Ethan
     },
     {
         name: "Internal Operations Committee (IOC)",
         description: "Budgeting, tooling, documentation, and process; ensures smooth cross-committee execution.",
-        members: [MEMBERS[5], MEMBERS[8], MEMBERS[1]], // Leo, Hannah, Ethan
+        leaders: [MEMBERS[5], MEMBERS[8]], // Leo (Ops), Hannah (Finance)
+        members: [MEMBERS[1]], // Ethan
     },
     {
         name: "Community Outreach, Recruitment & Engagement (CORE)",
         description: "Partnerships, tabling, info sessions, and onboarding for new members.",
-        members: [MEMBERS[9], MEMBERS[6], MEMBERS[0], MEMBERS[2]], // Marco, Priya, Jade, Sofia
+        leaders: [MEMBERS[9]], // Marco (Outreach Lead)
+        members: [MEMBERS[6], MEMBERS[0], MEMBERS[2]], // Priya, Jade, Sofia
     },
     {
         name: "Canadian Journal of Undergraduate Research (CJUR)",
         description: "Student-run editorial board managing peer review and publication.",
-        members: [MEMBERS[10], MEMBERS[11], MEMBERS[3]], // Alice, Noah, Arjun
+        leaders: [MEMBERS[10]], // Alice (Editor-in-Chief)
+        members: [MEMBERS[11], MEMBERS[3]], // Noah, Arjun
     },
 ];
