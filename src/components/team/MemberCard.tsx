@@ -27,9 +27,6 @@ export function MemberCard({
     size?: number;
 }) {
     const src = member.image || "/placeholder.svg";
-    const joined = member.joinedAt // optional: Date | string on your Member type
-        ? new Date(member.joinedAt as any).toLocaleString("default", { month: "long", year: "numeric" })
-        : undefined;
 
     return (
         <HoverCard openDelay={80}>
@@ -75,7 +72,7 @@ export function MemberCard({
                                 </a>
                             </Button>
                         )}
-                        {member.github && (
+                        {/* {member.github && (
                             <Button asChild variant="link" className="h-auto p-0 text-sm justify-start">
                                 <a href={member.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1">
                                     <ExternalLink className="h-3.5 w-3.5" />
@@ -90,7 +87,7 @@ export function MemberCard({
                                     Website
                                 </a>
                             </Button>
-                        )}
+                        )} */}
                     </div>
                 </div>
             </HoverCardContent>

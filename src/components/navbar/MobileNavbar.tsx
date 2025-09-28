@@ -38,7 +38,7 @@ export const MobileNavbar = () => {
                                         <AccordionTrigger className="text-sm px-4 py-3 font-medium hover:no-underline hover:bg-muted/50">{item.label}</AccordionTrigger>
                                         <AccordionContent className="px-2 pb-3">
                                             <ul className="flex flex-col">
-                                                {item.links &&
+                                                {"links" in item &&
                                                     item.links.map((l) => (
                                                         <li key={l.label}>
                                                             <Link
@@ -50,7 +50,8 @@ export const MobileNavbar = () => {
                                                             </Link>
                                                         </li>
                                                     ))}
-                                                {item.products &&
+                                                {"products" in item &&
+                                                    item.products &&
                                                     item.products.map((p) => (
                                                         <li key={p.title}>
                                                             <Link

@@ -21,8 +21,8 @@ export const rexFAQ = [
         question: "Can undergraduates apply to be a mentor?",
         answer: (
             <p>
-                No. Regardless of the extent of an undergraduate student's research experience, we currently only accept mentor applications from graduate students and postdoctoral fellows. If you're
-                a senior undergraduate student interested in research, check out our Research Coaches Program or look into presenting at URO's Research Involvement Fair (RIF)!
+                No. Regardless of the extent of an undergraduate student&apos;s research experience, we currently only accept mentor applications from graduate students and postdoctoral fellows. If
+                you&apos;re a senior undergraduate student interested in research, check out our Research Coaches Program or look into presenting at URO&apos;s Research Involvement Fair (RIF)!
             </p>
         ),
     },

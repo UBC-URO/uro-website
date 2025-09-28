@@ -25,7 +25,7 @@ export default function ContactPage() {
                         <div className="space-y-8">
                             <div>
                                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Send us a message</h2>
-                                <p className="text-xl text-muted-foreground max-w-2xl">Fill out the form below and we'll get back to you within 24 hours.</p>
+                                <p className="text-xl text-muted-foreground max-w-2xl">Fill out the form below and we&apos;ll get back to you within 24 hours.</p>
                             </div>
                             <ContactForm />
                         </div>

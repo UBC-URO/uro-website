@@ -58,7 +58,7 @@ export function CommitteeSection({ committee, className }: CommitteeSectionProps
                         )}
                     >
                         {leaders.map((leader, idx) => (
-                            <div key={leader.id ?? leader.name ?? idx} className="flex items-center justify-center">
+                            <div key={idx} className="flex items-center justify-center">
                                 {/* Slightly larger avatars for leaders */}
                                 <MemberCard member={leader} />
                             </div>
@@ -89,8 +89,8 @@ export function CommitteeSection({ committee, className }: CommitteeSectionProps
                         )}
                     >
                         {members.map((member, idx) => (
-                            <div key={member.id ?? member.name ?? idx} className="flex items-center justify-center">
-                                <MemberCard member={member} sizePx={84} />
+                            <div key={idx} className="flex items-center justify-center">
+                                <MemberCard member={member} />
                             </div>
                         ))}
                     </div>
