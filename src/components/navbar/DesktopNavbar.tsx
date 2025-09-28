@@ -20,7 +20,7 @@ export const DesktopNavbar = () => {
                 return (
                     <MenuItem key={item.label} setActive={setActive} active={active} item={item.label}>
                         {/* Vertical link list */}
-                        {item.links && (
+                        {"links" in item && item.links && (
                             <div className="flex flex-col space-y-4 text-sm">
                                 {item.links.map((l) => (
                                     <HoveredLink key={l.label} href={l.href}>
@@ -31,7 +31,7 @@ export const DesktopNavbar = () => {
                         )}
 
                         {/* Product grid */}
-                        {item.products && (
+                        {"products" in item && item.products && (
                             <div className="text-sm grid lg:grid-cols-2 gap-10 p-4">
                                 {item.products.map((p) => (
                                     <ProductItem key={p.title} title={p.title} href={p.href} src={p.src} description={p.description} />
