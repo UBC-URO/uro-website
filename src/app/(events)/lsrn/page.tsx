@@ -5,6 +5,7 @@ import { Layout } from "@/components/utils/Layout";
 import { lsrnFAQ } from "@/data/FAQ";
 import { Overview } from "@/components/events/lsrn/Overview";
 import { NetworkingAndPosters } from "@/components/events/lsrn/NetworkingAndPosters";
+import { StemcellSponsor } from "@/components/events/lsrn/StemcellSponsor";
 
 export default function LSRNPage() {
     return (
@@ -13,6 +14,7 @@ export default function LSRNPage() {
             <Schedule />
             <Workshops />
             <NetworkingAndPosters />
+            <StemcellSponsor />
             <FAQ items={lsrnFAQ} />
         </Layout>
     );

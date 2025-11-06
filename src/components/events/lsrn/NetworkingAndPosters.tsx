@@ -4,7 +4,7 @@ import Link from "next/link";
 const COLLABORATORS = [
     "Biochemistry Student Association",
     "Biological Science Society",
-    "BioPhysics Student Society",
+    "Biophysics and Medical Physics Student Society",
     "CAPS Student Association",
     "Science Undergraduate Society",
     "Medical Genetics Club",
@@ -43,7 +43,7 @@ export const NetworkingAndPosters = () => {
                     </p>
                     <div>
                         <Link
-                            href="/" // TODO: replace with your RSVP route or external URL
+                            href="https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_ems89VUdWsysdn0" // TODO: replace with your RSVP route or external URL
                             className="inline-flex items-center rounded-xl bg-teal-600 px-5 py-3 text-white hover:bg-teal-700 transition"
                         >
                             RSVP to Present Your Poster
