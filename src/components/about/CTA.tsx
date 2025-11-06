@@ -13,7 +13,7 @@ export const CTA = () => {
                     <p className="text-lg md:text-xl opacity-95 mb-8">Join URO today and become part of a community that’s passionate about undergraduate research and academic excellence.</p>
                     <div className="flex flex-col sm:flex-row gap-4">
                         <Button className="px-8 py-4 bg-white text-teal-600 font-semibold rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200" asChild>
-                            <a href="/join">Join Our Community</a>
+                            <a href="https://linktr.ee/uroubc">Join Our Community</a>
                         </Button>
                         <Button
                             variant="outline"

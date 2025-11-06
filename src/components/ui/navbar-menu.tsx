@@ -2,6 +2,7 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 const transition = {
     type: "spring" as const,
@@ -56,7 +57,7 @@ export const Menu = ({ className, setActive, children }: { className?: string; s
 export const ProductItem = ({ title, description, href, src }: { title: string; description: string; href: string; src: string }) => {
     return (
         <a href={href} className="flex space-x-2">
-            <img src={src} width={140} height={70} alt={title} className="shrink-0 rounded-md shadow-xl" />
+            <Image src={src} width={140} height={70} alt={title} className="shrink-0 rounded-md shadow-xl object-cover" />
             <div>
                 <h4 className="text-xl font-bold mb-1 text-black">{title}</h4>
                 <p className="text-neutral-700 text-sm max-w-[10rem]">{description}</p>

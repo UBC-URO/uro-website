@@ -42,7 +42,7 @@ export const Hero = () => {
                         </Link>
 
                         <Link
-                            href="/programs/rex"
+                            href="/rex"
                             className="inline-flex items-center justify-center px-6 py-3 text-base md:text-lg font-semibold rounded-xl border border-teal-600 text-teal-700 hover:bg-teal-50 transition-all"
                             aria-label="Learn about REX program"
                         >

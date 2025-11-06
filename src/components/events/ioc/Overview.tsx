@@ -1,3 +1,5 @@
+import { CTAButton } from "@/components/shared/CTAButton";
+
 export const Overview = () => {
     return (
         <>
@@ -27,10 +29,9 @@ export const Overview = () => {
                 </div>
 
                 {/* CTA */}
+
                 <div className="pt-4">
-                    <a href="https://www.instagram.com/uro_ubc" className="inline-flex items-center rounded-xl bg-teal-600 px-5 py-3 text-white hover:bg-teal-700 transition">
-                        Follow us on Instagram
-                    </a>
+                    <CTAButton href="https://www.instagram.com/uro_ubc">Follow us on Instagram</CTAButton>
                 </div>
             </div>
         </>

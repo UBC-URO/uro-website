@@ -1,3 +1,4 @@
+import { CTAButton } from "@/components/shared/CTAButton";
 import Link from "next/link";
 
 export const ApplicantInfo = () => {
@@ -15,12 +16,9 @@ export const ApplicantInfo = () => {
                         <li>Be excited and open to exploring various research fields!</li>
                     </ul>
                     <p className="font-medium">📅 Applications will open in January!</p>
-                    <Link
-                        href="/rif/apply" // replace with actual application link
-                        className="inline-flex items-center rounded-xl bg-teal-600 px-5 py-3 text-white hover:bg-teal-700 transition"
-                    >
+                    <CTAButton href="/rif/apply" disabled={true}>
                         Apply for RIF
-                    </Link>
+                    </CTAButton>
                 </div>
             </div>
 
@@ -35,12 +33,9 @@ export const ApplicantInfo = () => {
                     </p>
                     <p>You are free to proceed with any next steps involving the students you’ve interviewed, provided that any decisions are made mutually.</p>
                     <p className="font-medium">📅 The sign-up will open in January!</p>
-                    <Link
-                        href="/rif/apply" // replace with actual application link
-                        className="inline-flex items-center rounded-xl bg-teal-600 px-5 py-3 text-white hover:bg-teal-700 transition"
-                    >
+                    <CTAButton href="/rif/apply" disabled={true}>
                         Faculty Sign-Up
-                    </Link>
+                    </CTAButton>
                 </div>
             </div>
         </div>

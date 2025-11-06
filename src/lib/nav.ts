@@ -40,27 +40,27 @@ export const NAV = {
                 {
                     title: "RIF",
                     href: "/rif",
-                    src: "/rif1.jpg",
+                    src: "/research-coaches1.jpg",
                     description: "Annual research conference showcasing undergraduate research projects.",
                 },
                 {
                     title: "IOC",
                     href: "/ioc",
-                    src: "",
+                    src: "/about2.jpg",
                     description: "",
                 },
                 {
-                    title: "Upcoming Events",
-                    href: "/upcoming-events",
-                    src: "",
+                    title: "Events",
+                    href: "/events",
+                    src: "/lsrn1.jpg",
                     description: "",
                 },
-                {
-                    title: "Past Events",
-                    href: "/past-events",
-                    src: "",
-                    description: "",
-                },
+                // {
+                //     title: "Past Events",
+                //     href: "/past-events",
+                //     src: "",
+                //     description: "",
+                // },
             ],
         },
         // {
