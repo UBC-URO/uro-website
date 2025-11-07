@@ -11,7 +11,7 @@ export default function TeamPage() {
 
     return (
         <Layout>
-            in progress..
+            Currently under construction!
             {/* <section className="relative">
                 <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent pointer-events-none" />
                 <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 space-y-8">

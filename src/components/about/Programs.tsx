@@ -19,13 +19,13 @@ const programs: Program[] = [
         icon: Calendar,
         title: "Past Events",
         description: "Browse our archive of networking events, workshops, and social gatherings that brought together our research community.",
-        href: "/events/past",
+        href: "/events?past=true",
     },
     {
         icon: Award,
         title: "CJUR Publication",
         description: "Student-run journal providing publishing opportunities for undergraduate research across all disciplines.",
-        href: "/programs/cjur",
+        href: "https://cjur.ca/",
     },
 ];
 

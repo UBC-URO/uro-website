@@ -13,13 +13,16 @@ export function Layout({ className, children }: React.PropsWithChildren<{ classN
     const items = React.Children.toArray(children);
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen flex flex-col">
             {items.map((child, idx) => {
                 const isEven = idx % 2 === 0;
                 const gradient = isEven ? "bg-gradient-to-b from-white to-teal-50" : "bg-gradient-to-b from-teal-50 to-white";
 
+                const isLastItem = idx === items.length - 1;
+                const flexClass = isLastItem ? "flex-1" : "";
+
                 return (
-                    <Section key={idx} className={cn(gradient, className)}>
+                    <Section key={idx} className={cn(gradient, flexClass, className)}>
                         <Container>{child}</Container>
                     </Section>
                 );
