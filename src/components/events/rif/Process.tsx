@@ -8,7 +8,7 @@ export const Process = () => {
                     <li>Apply with your interests & resume</li>
                     <li>SEC screens and shortlists candidates</li>
                     <li>Pairs made with relevant faculty</li>
-                    <li>15-minute 1:1 speed interviews</li>
+                    <li>10-minute 1:1 speed interviews</li>
                     <li>Optional next steps decided by you & PI</li>
                 </ol>
             </div>

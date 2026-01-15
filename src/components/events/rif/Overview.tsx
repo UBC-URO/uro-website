@@ -7,12 +7,12 @@ export const Overview = () => {
                 <div className="text-lg text-slate-700 leading-relaxed space-y-6">
                     <p>
                         RIF is a research recruitment event that directly connects undergraduate students and research faculty through a speed-interview style. After collecting undergraduate
-                        applications, we pair students with interested faculty for a one-on-one 15-minute discussion.
+                        applications, we pair students with interested faculty for a one-on-one 10-minute discussion.
                     </p>
                     <p>This event lets PIs meet many motivated students while giving students a chance to practice interview skills.</p>
                     <p className="font-bold ">
-                        📍 This year, the event will take place on <span className="underline text-teal-600">Zoom</span> in <span className="underline text-teal-600">late February</span> (exact date
-                        TBD).
+                        📍 This year, the event will take place on <span className="underline text-teal-600">Zoom</span> on{" "}
+                        <span className="underline text-teal-600">Thursday, February 12, 2026 from 5:30 - 8:30PM PST</span>.
                     </p>
                 </div>
             </div>

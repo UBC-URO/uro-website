@@ -151,8 +151,23 @@ export const rifFAQ = [
         answer: (
             <p>
                 In your responses, make sure you thoroughly demonstrate and articulate your interest in your intended research field. Also, double-check all your files before submitting to ensure
-                you’ve uploaded the correct documents.
+                you&apos;ve uploaded the correct documents.
             </p>
+        ),
+    },
+    {
+        question: "I'm not available for the entire 3hr period of the event. Can I only attend part of the event?",
+        answer: (
+            <>
+                <p>
+                    <strong>For applicants:</strong> Unfortunately, we require you to be available for the whole event duration. However, depending on interviewer&apos;s availability, we may not be
+                    able to schedule you for the entire event.
+                </p>
+                <p>
+                    <strong>For research staff:</strong> If you are unavailable for the entire event, you are welcome to sign up for individual half-hour slots. However, note that your availability
+                    will determine the maximum number of applicants that you can interview.
+                </p>
+            </>
         ),
     },
     {
