@@ -1,11 +1,12 @@
 "use client";
 
+import { Suspense } from "react";
 import { Layout } from "@/components/utils/Layout";
 import { EventsSection } from "@/components/events/info/EventsSection";
 import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 
-export default function EventsPage() {
+function EventsContent() {
     const searchParams = useSearchParams();
     const router = useRouter();
     const showPast = searchParams.get("past") === "true";
@@ -18,9 +19,15 @@ export default function EventsPage() {
         }
     };
 
+    return <EventsSection showPast={showPast} onFilterChange={handleFilterChange} />;
+}
+
+export default function EventsPage() {
     return (
         <Layout>
-            <EventsSection showPast={showPast} onFilterChange={handleFilterChange} />
+            <Suspense fallback={<div>Loading...</div>}>
+                <EventsContent />
+            </Suspense>
         </Layout>
     );
 }
